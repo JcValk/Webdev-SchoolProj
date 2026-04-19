@@ -37,17 +37,15 @@ if (category_links.length > 0 && products.length > 0) {
             show_products(category);
         });
     }
-    
+
     show_products('mens');
 }
 
-// Contact form validation
 const contact_form = document.getElementById('contact-form');
 if (contact_form) {
     contact_form.addEventListener('submit', function(e) {
         e.preventDefault();
         
-        // Clear previous errors
         document.querySelectorAll('.error').forEach(error => {
             error.style.display = 'none';
             error.textContent = '';
@@ -60,7 +58,6 @@ if (contact_form) {
         
         let is_valid = true;
         
-        // Validate name
         if (name === '') {
             document.getElementById('name-error').textContent = 'Name is required';
             document.getElementById('name-error').style.display = 'block';
@@ -71,7 +68,6 @@ if (contact_form) {
             is_valid = false;
         }
         
-        // Validate email
         const email_regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         if (email === '') {
             document.getElementById('email-error').textContent = 'Email is required';
@@ -83,7 +79,6 @@ if (contact_form) {
             is_valid = false;
         }
         
-        // Validate message
         if (message === '') {
             document.getElementById('message-error').textContent = 'Message is required';
             document.getElementById('message-error').style.display = 'block';
@@ -95,10 +90,8 @@ if (contact_form) {
         }
         
         if (is_valid) {
-            // Simulate form submission
             document.getElementById('success-message').textContent = 'Thank you for your message! We will get back to you soon.';
             document.getElementById('success-message').style.display = 'block';
-            // Reset form
             contact_form.reset();
         }
     });
