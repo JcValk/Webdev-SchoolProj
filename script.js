@@ -10,7 +10,6 @@ if (shop_button) {
     });
 }
 if (category_links.length > 0 && products.length > 0) {
-    // Function to show products for a category
     function show_products(category) {
         products.forEach(product => {
             if (product.classList.contains(category)) {
@@ -19,13 +18,11 @@ if (category_links.length > 0 && products.length > 0) {
                 product.style.display = 'none';
             }
         });
-        // Update select value if it exists
         if (category_select) {
             category_select.value = category;
         }
     }
 
-    // Add click event to each category link
     category_links.forEach(link => {
         link.addEventListener('click', function(e) {
             e.preventDefault();
@@ -34,15 +31,13 @@ if (category_links.length > 0 && products.length > 0) {
         });
     });
 
-    // Add change event to select
     if (category_select) {
         category_select.addEventListener('change', function() {
             const category = this.value;
             show_products(category);
         });
     }
-
-    // Show default category (mens) on page load
+    
     show_products('mens');
 }
 
