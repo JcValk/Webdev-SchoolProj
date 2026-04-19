@@ -325,7 +325,8 @@ body{
     }
 
     .shop_now_button{
-
+        background:#9aa18f;
+        color:#1f2329;
         font-size:18px;
         padding:15px 40px;
     }
@@ -345,6 +346,7 @@ body{
     }
 
     .category_select{
+        border: 5px solid #3a3f46;
         display: block;
         margin-bottom: 20px;
     }
@@ -379,4 +381,10 @@ body{
     .footer{
     padding:10px 60px 0px 60px;
 }
+    .submit_btn{
+        background:#9aa18f;
+        color:#1f2329;
+        font-size:14px;
+        padding:10px 30px;
+    }
 }
