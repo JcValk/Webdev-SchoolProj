@@ -230,20 +230,19 @@ body{
     margin-bottom: 40px;
 }
 
-.form_group{
+.form_elem{
     margin-bottom: 20px;
     text-align: left;
 }
 
-.form_group label{
+.form_elem label{
     display: block;
     margin-bottom: 5px;
     color: #cfcfcf;
     font-weight: 600;
 }
 
-.form_group input,
-.form_group textarea{
+.form_elem input, .form_elem textarea{
     width: 100%;
     padding: 10px;
     border: 1px solid #3a3f46;
@@ -253,7 +252,7 @@ body{
     font-size: 16px;
 }
 
-.form_group textarea{
+.form_elem textarea{
     height: 120px;
     resize: vertical;
 }
@@ -291,6 +290,23 @@ body{
     color: #cfcfcf;
     margin-bottom: 20px;
     text-align: justify;
+}
+
+.submit_btn{
+    display:inline-block;
+    text-decoration:none;
+    background:transparent;
+    color:#9aa18f;
+    font-size:18px;
+    padding:15px 40px;
+    border-radius:100px;
+    border:2px solid #9aa18f;
+    transition:0.3s;
+}
+
+.submit_btn:hover{
+    background:#9aa18f;
+    color:#1f2329;
 }
 
 /* MOBILE */
