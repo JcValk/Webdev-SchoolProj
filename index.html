@@ -8,11 +8,15 @@
 </head>
 <body>
     <header class="header">
-        <nav class="left_nav">
-            <a href="./index.html">Home</a>
-            <a href="./htmlfiles/about.html">About</a>
-            <a href="./htmlfiles/shopping.html">Shopping</a>
-        </nav>
+        <div class="nav_menu">
+            <select class="nav_select" onchange="if (this.value) window.location.href=this.value;">
+                <option value="./index.html" selected>Home</option>
+                <option value="./htmlfiles/about.html">About</option>
+                <option value="./htmlfiles/shopping.html">Shopping</option>
+                <option value="./htmlfiles/contacts.html">Contact Us</option>
+                <option value="./htmlfiles/cart.html">Cart</option>
+            </select>
+        </div>
         <nav class="right_nav">
             <a href="./htmlfiles/cart.html">
                 <img src="/images/cart.png" alt="Cart" class="cart_icon">

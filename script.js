@@ -9,6 +9,7 @@ if (shop_btn) {
         window.location.href = "htmlfiles/shopping.html";
     });
 }
+
 if (category_nav_elem.length > 0 && products.length > 0) {
     function show_products(category) {
         products.forEach(product => {
